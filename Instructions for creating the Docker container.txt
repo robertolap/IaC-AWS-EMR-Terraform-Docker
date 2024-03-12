@@ -10,7 +10,7 @@ docker build -t proj-terraform-image:p1 .
 
 # Execute the command below to create the Docker container
 
-docker run -dit --name dsa-p1 -v ./IaC:/iac proj-terraform-image:p1 /bin/bash
+docker run -dit --name dsa-p1 -v .(your path):/iac proj-terraform-image:p1 /bin/bash
 
 
 # Check the versions of Terraform and AWS CLI with the commands below
